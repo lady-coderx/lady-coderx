@@ -1,0 +1,55 @@
+<!-- ESTILOS BOOSTRAP 4 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+<div class="container-fluid register-login">
+    <div class="row wrapper">
+        <div class="col-lg padding-none bg-image-container">
+            <div class="container__image">
+                <div class="image--points"></div>
+            </div>
+        </div>
+        <div class="col-lg form-center d-flex justify-content-center align-items-center">
+            <div class="container-form">
+                <h1 class="register-login-h1">VpnForosh</h1>
+                <!-- Action la página a la cuál irá la información del formulario -->
+                <!-- Method indica cómo enviaremos la información por el método HTTP -->
+                <!-- enctype multipart/form-data permite agregar archivos -->
+                <form action="login.php" method="POST" name="loginForm" id="loginForm">
+                    <div class="form-group">
+                        <input type="text" id="apodo" name="apodo" class="form-control" required>
+                        <label for="apodo" class="form-label">Username</label>
+                    </div>
+                    <div class="form-group margin--bottom">
+                        <input type="password" id="password" name="password" class="form-control" required>
+                        <label for="password" class="form-label">Password</label>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input checked--form--input" type="checkbox" id="remember" value="">
+                        </div>
+                        <a href="#" class="forgot__password--link">Forgetpassword?</a>
+                    </div>
+                    <div class="d-flex justify-content-lg-between">
+                        <button type="submit" class="btn btn-login align-self-center" name="acceso"
+                            id="acceso">Login</button>
+                    </div>
+                    <a href="#" class="register-link--haveaccount">
+                        Not Register?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="script.js">
